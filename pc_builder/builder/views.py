@@ -6,7 +6,8 @@ builds = [
 	{
 		'title':'build name here',
 		'gpu':'RTX 3080',
-		'cpu': 'Ryzen 9 3700x',		
+		'cpu': 'Ryzen 9 3700x',
+		'motherboard': 'Asus ROG STRIX B550-F GAMING (WI-FI) ATX AM4 Motherboard'		
 	}
 ]
 

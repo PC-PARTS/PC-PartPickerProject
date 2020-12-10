@@ -1,8 +1,15 @@
 {% extends "builder/base.html" %}
 {% block content %}
 	{% for build in builds %}
-		<h1>{{ build.title }}</h1>
-		<p>{{ build.gpu }}</p>
-		<p>{{ build.cpu }}</p>
+		<article class="media content-section">
+		  <div class="media-body">
+		    <div class="article-metadata">
+		      <a class="mr-2" href="#">{{ build.title }}</a>
+		      <small class="text-muted">{{ build.gpu }}</small>
+		    </div>
+		    <h2><a class="article-title" href="#">{{ build.cpu }}</a></h2>
+		    <p class="article-content">{{ build.motherboard }}</p>
+		  </div>
+		</article>
 	{% endfor %}
 {% endblock content %}
