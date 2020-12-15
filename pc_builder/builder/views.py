@@ -20,4 +20,7 @@ def home(request):
 
 def login(request):
 	return render(request, 'builder/login.html')
+
+def register(request):
+	return render(request, 'builder/register.html')
 # Create your views here.
