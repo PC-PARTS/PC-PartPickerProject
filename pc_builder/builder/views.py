@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 
-builds = [
+buildtest = [
 	{
 		'title':'build name here',
 		'gpu':'RTX 3080',
@@ -14,7 +14,7 @@ builds = [
 
 def home(request):
 	context = {
-		'builds': builds
+		'builds': buildtest
 	}
 	return render(request, 'builder/home.html',context)
 
@@ -23,4 +23,10 @@ def login(request):
 
 def register(request):
 	return render(request, 'builder/register.html')
+
+def about(request):
+	return render(request, 'builder/about.html')
+
+def builds(request):
+	return render(request, 'builder/builds.html')
 # Create your views here.
