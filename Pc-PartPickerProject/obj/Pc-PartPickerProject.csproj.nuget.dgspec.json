@@ -1,33 +1,35 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Class\\Term 6\\Field Project\\PC-PartPickerProject\\Pc-PartPickerProject\\Pc-PartPickerProject.csproj": {}
+    "D:\\School Things\\Field-Project1\\Pc-PartPickerProject\\PC-PartPickerProject\\Pc-PartPickerProject\\Pc-PartPickerProject.csproj": {}
   },
   "projects": {
-    "C:\\Class\\Term 6\\Field Project\\PC-PartPickerProject\\Pc-PartPickerProject\\Pc-PartPickerProject.csproj": {
+    "D:\\School Things\\Field-Project1\\Pc-PartPickerProject\\PC-PartPickerProject\\Pc-PartPickerProject\\Pc-PartPickerProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Class\\Term 6\\Field Project\\PC-PartPickerProject\\Pc-PartPickerProject\\Pc-PartPickerProject.csproj",
+        "projectUniqueName": "D:\\School Things\\Field-Project1\\Pc-PartPickerProject\\PC-PartPickerProject\\Pc-PartPickerProject\\Pc-PartPickerProject.csproj",
         "projectName": "Pc-PartPickerProject",
-        "projectPath": "C:\\Class\\Term 6\\Field Project\\PC-PartPickerProject\\Pc-PartPickerProject\\Pc-PartPickerProject.csproj",
-        "packagesPath": "C:\\Users\\theal\\.nuget\\packages\\",
-        "outputPath": "C:\\Class\\Term 6\\Field Project\\PC-PartPickerProject\\Pc-PartPickerProject\\obj\\",
+        "projectPath": "D:\\School Things\\Field-Project1\\Pc-PartPickerProject\\PC-PartPickerProject\\Pc-PartPickerProject\\Pc-PartPickerProject.csproj",
+        "packagesPath": "C:\\Users\\Alex\\.nuget\\packages\\",
+        "outputPath": "D:\\School Things\\Field-Project1\\Pc-PartPickerProject\\PC-PartPickerProject\\Pc-PartPickerProject\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\theal\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\MicroFocus.VisualStudio.Offline.config",
+          "C:\\Users\\Alex\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Micro Focus\\Visual COBOL\\NuGetPackages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp2.1": {
+            "targetAlias": "netcoreapp2.1",
             "projectReferences": {}
           }
         },
@@ -39,6 +41,7 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
+          "targetAlias": "netcoreapp2.1",
           "dependencies": {
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
@@ -68,7 +71,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\PROGRAM FILES\\DOTNET\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
