@@ -148,18 +148,6 @@ class Psu(models.Model):
 	rating = models.CharField(max_length=100)
 	price = models.CharField(max_length=100)
 	
-class Os(models.Model):
-
-	os_name = models.CharField(max_length=100)
-	BD = models.CharField(max_length=100)
-	DVD = models.CharField(max_length=100)
-	CD = models.CharField(max_length=100)
-	BD_write = models.CharField(max_length=100)
-	DVD_write = models.CharField(max_length=100)
-	CD_write = models.CharField(max_length=100)
-	rating = models.CharField(max_length=100)
-	price = models.CharField(max_length=100)
-	
 class Monitor1(models.Model):
 
 	monitor_name = models.CharField(max_length=100)
