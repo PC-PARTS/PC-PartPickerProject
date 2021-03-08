@@ -1,0 +1,30 @@
+{% extends "builder/base.html" %}
+{% block content %}
+	<table style="width:100%">
+	  <tr>
+	    <th>Name</th>
+	    <th>Case Type</th>
+	    <th>Color</th>
+	    <th>Power Supply</th>
+	    <th>Side Panel Window</th>
+	    <th>External Bays</th>
+	    <th>Internal Bays</th>
+	    <th>Rating</th>
+	    <th>Price</th>
+	  </tr>
+	  
+	{% for case in cases %}
+	<tr>
+	    <td>{{ case.case_name }}</td>
+	    <td>{{ case.case_type }}</td>
+	    <td>{{ case.color }}</td>
+	    <td>{{ case.power_supply }}</td>
+	    <td>{{ case.side_pannel_window }}</td>
+	    <td>{{ case.external_bays }}</td>
+	    <td>{{ case.internal_bays }}</td>
+	    <td>{{ case.rating }}</td>
+	    <td>{{ case.price }}</td>
+	</tr>	
+	{% endfor %}
+	</table>
+{% endblock content %}
