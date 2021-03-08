@@ -1,0 +1,26 @@
+{% extends "builder/base.html" %}
+{% block content %}
+	<table style="width:100%">
+	  <tr>
+	    <th>Name</th>
+	    <th>Fan Rpm</th>
+	    <th>Noise Level</th>
+	    <th>Color</th>
+	    <th>Radiator Size</th>
+	    <th>Rating</th>
+	    <th>Price</th>
+	  </tr>
+	  
+	{% for case in cases %}
+	<tr>
+	    <td>{{ Cpu_Cooler.cpu_cooler_name }}</td>
+	    <td>{{ Cpu_Cooler.fan_rpm }}</td>
+	    <td>{{ Cpu_Cooler.noise_level }}</td>
+	    <td>{{ Cpu_Cooler.color }}</td>
+	    <td>{{ Cpu_Cooler.radiator_size }}</td>
+	    <td>{{ Cpu_Cooler.rating }}</td>
+	    <td>{{ Cpu_Cooler.price }}</td>
+	</tr>	
+	{% endfor %}
+	</table>
+{% endblock content %}
