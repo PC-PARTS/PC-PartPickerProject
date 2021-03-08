@@ -29,4 +29,7 @@ def about(request):
 
 def builds(request):
 	return render(request, 'builder/builds.html')
+
+def parts(request):
+	return render(request, 'builder/parts.html')
 # Create your views here.
