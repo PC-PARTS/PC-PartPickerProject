@@ -1,5 +1,5 @@
 body {
-  background: transparent;
+  background: transparent !important;
   color: #333333;
   margin-top: 5rem;
 }
