@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views.generic import ListView
 from django.http import HttpResponse
-from .models import Build, Case, Cpu_Cooler
+from .models import Build,Cpu_Cooler,Cpu,Motherboard,Memory1,Memory2,Storage1,Storage2,Storage3,Gpu,Case,Psu,Monitor1,Monitor2,Monitor3
 
 
 
