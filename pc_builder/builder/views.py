@@ -33,6 +33,11 @@ def builds(request):
 	return render(request, 'builder/builds.html')
 
 
+def parts(request):
+	return render(request, 'builder/parts.html')
+# Create your views here.
+
+
 
 
 
@@ -192,3 +197,4 @@ def mon3(request):
 		'mon3': Monitor3.objects.all()
 	}
 	return render(request, 'builder/mon3.html', context)
+

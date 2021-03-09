@@ -4,6 +4,7 @@ from . import views
 urlpatterns = [
     path('', BuildListView.as_view(), name = 'builder-home'),
     path('builds/', views.builds, name = 'builder-builds'),
+<<<<<<< HEAD
     path('about/', views.about, name = 'builder-about'),    
     path('cpu_coolers/', views.cpu_coolers, name = 'builder-cpu_coolers'),
     path('cpu/', views.cpu, name = 'builder-cpu'),
@@ -19,4 +20,16 @@ urlpatterns = [
     path('mon1/', views.mon1, name = 'builder-mon1'),
     path('mon2/', views.mon2, name = 'builder-mon2'),
     path('mon3/', views.mon3, name = 'builder-mon3'),
+=======
+    path('about/', views.about, name = 'builder-about'),
+
+    path('parts/', views.parts, name = 'builder-parts'),
+
+    path('cases/', views.cases, name = 'builder-cases'),
+    path('cpu_coolers/', views.cpu_coolers, name = 'builder-cpu_coolers'),
+    
+
+
+
+>>>>>>> 216d3816436ed9a514a8f7a22483ad45f4b03ce9
 ]
