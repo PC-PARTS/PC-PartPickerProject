@@ -1,0 +1,28 @@
+{% extends "builder/base.html" %}
+{% block content %}
+	<table style="width:100%">
+	  <tr>
+	    <th>Name</th>	    
+	    <th>F Factor</th>
+	    <th>Efficency Rating</th>
+	    <th>Wattage</th>
+	    <th>Modular</th>
+	    <th>Color</th>	    
+	    <th>Rating</th>
+	    <th>Price</th>
+	  </tr>
+	  
+	{% for psus in psu %}
+	<tr>
+	    <td>{{ Psu.power_name }}</td>
+	    <td>{{ Psu.f_factor }}</td>
+	    <td>{{ Psu.efficency_rating }}</td>
+	    <td>{{ Psu.wattage }}</td>
+	    <td>{{ Psu.modular }}</td>
+	    <td>{{ Psu.color }}</td>
+	    <td>{{ Psu.rating }}</td>
+	    <td>{{ Psu.price }}</td>
+	</tr>	
+	{% endfor %}
+	</table>
+{% endblock content %}

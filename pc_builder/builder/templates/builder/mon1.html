@@ -1,0 +1,30 @@
+{% extends "builder/base.html" %}
+{% block content %}
+	<table style="width:100%">
+	  <tr>
+	    <th>Name</th>
+	    <th>Screen Size</th>
+	    <th>Resolution</th>
+	    <th>Refresh Rate</th>
+	    <th>Response Time</th>
+	    <th>Panel Type</th>
+	    <th>Aspect Ratio</th>	    
+	    <th>Rating</th>
+	    <th>Price</th>
+	  </tr>
+	  
+	{% for monitor in mon1 %}
+	<tr>
+	    <td>{{ Monitor1.monitor_name }}</td>
+	    <td>{{ Monitor1.screen_size }}</td>
+	    <td>{{ Monitor1.resolution }}</td>
+	    <td>{{ Monitor1.refresh_rate }}</td>
+	    <td>{{ Monitor1.response_time }}</td>
+	    <td>{{ Monitor1.panel_type }}</td>
+	    <td>{{ Monitor1.aspect_ratio }}</td>
+	    <td>{{ Monitor1.rating }}</td>
+	    <td>{{ Monitor1.price }}</td>
+	</tr>	
+	{% endfor %}
+	</table>
+{% endblock content %}

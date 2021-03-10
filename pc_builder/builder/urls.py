@@ -21,7 +21,6 @@ urlpatterns = [
     path('mon3/', views.mon3, name = 'builder-mon3'),
     path('about/', views.about, name = 'builder-about'),
     path('parts/', views.parts, name = 'builder-parts'),
-    path('cases/', views.cases, name = 'builder-cases'),
     path('cpu_coolers/', views.cpu_coolers, name = 'builder-cpu_coolers'),    
 
 ]
