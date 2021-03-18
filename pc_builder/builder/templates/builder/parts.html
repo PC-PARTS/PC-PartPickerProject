@@ -2,77 +2,60 @@
 {% block content %}
 <h1>Build Parts</h1>
 <label for="parts">Choose a part:</label>
-<select id="parts" name="parts">
-    <option value="CPU">CPU</option>
-    <option value="CPU Cooler">CPU Cooler</option>
-    <option value="Motherboard">Motherboard</option>
-    <option value="Memory 1">Memory 1</option>
-    <option value="Memory 2">Memory 2</option>
-    <option value="Storage 1">Storage 1</option>
-    <option value="Storage 2">Storage 2</option>
-    <option value="Storage 3">Storage 3</option>
-    <option value="GPU">GPU</option>
-    <option value="Case">Case</option>
-    <option value="PSU">PSU</option>
-    <option value="OS">OS</option>
-    <option value="Moniter 1">Moniter 1</option>
-    <option value="Moniter 2">Moniter 2</option>
-    <option value="Moniter 3">Moniter 3</option>
+<select id="parts" class="container">
+    <a href="#CPU"><option value="CPU">CPU</option></a>
+    <a href="#CPU_Cooler"><option value="CPU Cooler">CPU Cooler</option></a>
+    <a href="#"><option value="Motherboard">Motherboard</option></a>
+    <a href="#"><option value="Memory 1">Memory 1</option></a>
+    <a href="#"><option value="Memory 2">Memory 2</option></a>
+    <a href="#"><option value="Storage 1">Storage 1</option></a>
+    <a href="#"><option value="Storage 2">Storage 2</option></a>
+    <a href="#"><option value="Storage 3">Storage 3</option></a>
+    <a href="#"><option value="GPU">GPU</option></a>
+    <a href="#"><option value="Case">Case</option></a>
+    <a href="#"><option value="PSU">PSU</option></a>
+    <a href="#"><option value="OS">OS</option></a>
+    <a href="#"><option value="Moniter 1">Moniter 1</option></a>
+    <a href="#"><option value="Moniter 2">Moniter 2</option></a>
+    <option value="Moniter 3"><a href="#Mon3">Moniter 3</a></option>
 </select>
 
 <script>
-    function Scroll() {
-        document.getElementById("parts").classList;
-
-    }
+	const part = document.querySelectorAll(".partSelector");
+    
 </script>
+<p>
+  Your value <spam id="changed"></spam>
+</p>
 
 
-<h2 id="CPU">CPU</h2>
+<a href="/cpu"><h2 id="CPU">CPU</h2></a>
 
+<a href="/cpu_coolers"><h2 id="CPU_Cooler">CPU Cooler</h2></a>
 
+<a href="#Mon3"><h2 id="Mother">Motherboard</h2></a>
 
-<h2 id="CPU Cooler">CPU Cooler</h2>
+<a href="/mem1"><h2 id="Mem1">Memory 1</h2></a>
 
+<a href="/mem2"><h2 id="Mem2">Memory 2</h2></a>
 
+<a href="/storage1"><h2 id="Storage1">Storage 1</h2></a>
 
-<h2 id="Mother">Motherboard</h2>
+<a href="/storage2"><h2 id="Storage2">Storage 2</h2></a>
 
+<a href="/storage3"><h2 id="Storage3">Storage 3</h2></a>
 
-<h2 id="Mem1">Memory 1</h2>
+<a href="/gpu"><h2 id="GPU">GPU</h2></a>
 
+<a href="/case"><h2 id="Case">Case</h2></a>
 
-<h2 id="Mem2">Memory 2</h2>
+<a href="/psu"><h2 id="PSU">PSU</h2></a>
 
+<a href="/mon1"><h2 id="Mon1">Moniter 1</h2></a>
 
-<h2 id="Storage1">Storage 1</h2>
+<a href="/mon2"><h2 id="Mon2">Moniter 2</h2></a>
 
-
-<h2 id="Storage2">Storage 2</h2>
-
-
-<h2 id="Storage3">Storage 3</h2>
-
-
-<h2 id="GPU">GPU</h2>
-
-
-<h2 id="Case">Case</h2>
-
-
-<h2 id="PSU">PSU</h2>
-
-
-<h2 id="OS">OS</h2>
-
-
-<h2 id="Mon1">Moniter 1</h2>
-
-
-<h2 id="Mon2">Moniter 2</h2>
-
-
-<h2 id="Mon3">Moniter 3</h2>
+<a href="/mon3"><h2 id="Mon3">Moniter 3</h2></a>
 
 
 
