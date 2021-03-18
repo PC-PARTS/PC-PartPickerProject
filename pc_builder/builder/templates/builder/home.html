@@ -1,15 +1,14 @@
 {% extends "builder/base.html" %}
 {% block content %}
-	{% for build in builds %}
-		<article class="media content-section">
-		  <div class="media-body">
-		    <div class="article-metadata">
-		      <a class="mr-2" href="#">{{ build.title }}</a>
-		      <small class="text-muted">{{ build.gpu }}</small>
-		    </div>
-		    <h2><a class="article-title" href="#">{{ build.cpu }}</a></h2>
-		    <p class="article-content">{{ build.motherboard }}</p>
-		  </div>
-		</article>
-	{% endfor %}
+
+<h2>What We Do</h2>
+<p>This website is a streamlined tool to build your dream PC using our wide variety of part options. We have all the parts you will ever need, ranging from GPUs to Cooling Fans. 
+Our custom builds can include whatever you want, can be named anything of your choice, and will be shipped directly to you. Our goal is to make creating your PC as easy as it should be while not gouging your wallet.</p>
+
+<h2>Team Members</h2>
+<p>Our team consists of back-end programmers and front-end programmers. Blake Turner and Alexander Reed create and improve everything on the back-end spectrum
+while Cade Kirkland and Alonso Rodriguez create and improve everything front-end related.</p>
+
+<img src="https://c4.wallpaperflare.com/wallpaper/605/3/618/computer-custom-electronic-game-wallpaper-preview.jpg" style="height: 300px; width: auto;">
+
 {% endblock content %}
