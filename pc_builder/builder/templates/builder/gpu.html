@@ -3,25 +3,27 @@
 	<table style="width:100%">
 	  <tr>
 	    <th>Name</th>	    
-	    <th>F Factor</th>
-	    <th>Efficency Rating</th>
-	    <th>Wattage</th>
-	    <th>Modular</th>
-	    <th>Color</th>	    
+	    <th>Chipset</th>
+	    <th>Memory</th>
+	    <th>Core Clock</th>
+	    <th>Boost Clock</th>
+	    <th>Color</th>
+	    <th>Length</th>	    
 	    <th>Rating</th>
 	    <th>Price</th>
 	  </tr>
 	  
-	{% for psus in psu %}
+	{% for gpus in gpu %}
 	<tr>
-	    <td>{{ Psu.power_name }}</td>
-	    <td>{{ Psu.f_factor }}</td>
-	    <td>{{ Psu.efficency_rating }}</td>
-	    <td>{{ Psu.wattage }}</td>
-	    <td>{{ Psu.modular }}</td>
-	    <td>{{ Psu.color }}</td>
-	    <td>{{ Psu.rating }}</td>
-	    <td>{{ Psu.price }}</td>
+	    <td>{{ Gpu.gpu_name }}</td>
+	    <td>{{ Gpu.chipset }}</td>
+	    <td>{{ Gpu.memory }}</td>
+	    <td>{{ Gpu.core_clock }}</td>
+	    <td>{{ Gpu.boost_clock }}</td>
+	    <td>{{ Gpu.color }}</td>
+	    <td>{{ Gpu.length }}</td>
+	    <td>{{ Gpu.rating }}</td>
+	    <td>{{ Gpu.price }}</td>
 	</tr>	
 	{% endfor %}
 	</table>

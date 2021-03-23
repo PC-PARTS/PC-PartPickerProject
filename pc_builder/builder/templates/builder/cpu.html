@@ -1,0 +1,30 @@
+{% extends "builder/base.html" %}
+{% block content %}
+	<table style="width:100%">
+	  <tr>
+	    <th>Name</th>
+	    <th>Core Count</th>
+	    <th>Core Clock</th>
+	    <th>Boost Clock</th>
+	    <th>TDP</th>
+	    <th>Integrated Graphics</th>
+	    <th>SMT</th>
+	    <th>Rating</th>
+	    <th>Price</th>
+	  </tr>
+	  
+	{% for cpu in cpus %}
+	<tr>
+	    <td>{{ Motherboard.m_board_name }}</td>
+	    <td>{{ Motherboard.socket_cpu }}</td>
+	    <td>{{ Motherboard.form_factor }}</td>
+	    <td>{{ Motherboard.memory_max }}</td>
+	    <td>{{ Motherboard.memory_slots }}</td>
+	    <td>{{ Motherboard.color }}</td>
+	    <td>{{ Motherboard.rating }}</td>
+	    <td>{{ Motherboard.price }}</td>
+	    
+	</tr>	
+	{% endfor %}
+	</table>
+{% endblock content %}

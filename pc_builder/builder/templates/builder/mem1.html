@@ -1,0 +1,30 @@
+{% extends "builder/base.html" %}
+{% block content %}
+	<table style="width:100%">
+	  <tr>
+	    <th>Name</th>	    
+	    <th>Speed</th>
+	    <th>Modules</th>
+	    <th>Price/GB</th>
+	    <th>Color</th>
+	    <th>First Word Latency</th>
+	    <th>CAS Latency</th>	    
+	    <th>Rating</th>
+	    <th>Price</th>
+	  </tr>
+	  
+	{% for memory in Memory1 %}
+	<tr>
+	    <td>{{ Memory1.mem_name }}</td>
+	    <td>{{ Memory1.speed }}</td>
+	    <td>{{ Memory1.modules }}</td>
+	    <td>{{ Memory1.price_gb }}</td>
+	    <td>{{ Memory1.color }}</td>
+	    <td>{{ Memory1.f_word_latency }}</td>
+	    <td>{{ Memory1.cas_latency }}</td>
+	    <td>{{ Memory1.rating }}</td>
+	    <td>{{ Memory1.price }}</td>
+	</tr>	
+	{% endfor %}
+	</table>
+{% endblock content %}

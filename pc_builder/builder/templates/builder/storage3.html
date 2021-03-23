@@ -1,0 +1,30 @@
+{% extends "builder/base.html" %}
+{% block content %}
+	<table style="width:100%">
+	  <tr>
+	    <th>Name</th>	    
+	    <th>Capacity</th>
+	    <th>Price/GB</th>
+	    <th>Storage Type</th>
+	    <th>Cache</th>
+	    <th>Form Factor</th>
+	    <th>Interface</th>	    
+	    <th>Rating</th>
+	    <th>Price</th>
+	  </tr>
+	  
+	{% for storages in Storage3 %}
+	<tr>
+	    <td>{{ Storage3.storyage_name }}</td>
+	    <td>{{ Storage3.capacity }}</td>
+	    <td>{{ Storage3.price_gb }}</td>
+	    <td>{{ Storage3.storage_type }}</td>
+	    <td>{{ Storage3.cache }}</td>
+	    <td>{{ Storage3.form_factor }}</td>
+	    <td>{{ Storage3.interface }}</td>
+	    <td>{{ Storage3.rating }}</td>
+	    <td>{{ Storage3.price }}</td>
+	</tr>	
+	{% endfor %}
+	</table>
+{% endblock content %}
