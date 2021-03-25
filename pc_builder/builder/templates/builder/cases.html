@@ -24,6 +24,11 @@
 	    <td>{{ case.internal_bays }}</td>
 	    <td>{{ case.rating }}</td>
 	    <td>{{ case.price }}</td>
+	    <td>
+	    	<form action="/event/" method="POST" id="caseButton">
+	    		<button type="submit" name="case" value=case.case_name form="caseButton" ></button>
+	    	</form>
+	    </td>
 	</tr>	
 	{% endfor %}
 	</table>
