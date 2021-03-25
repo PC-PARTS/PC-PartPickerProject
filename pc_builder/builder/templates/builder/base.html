@@ -19,22 +19,212 @@
 	{% else %}
 		<title>PC Builder - {{title}}</title>
 	{% endif %}	
-</head>
-<style	type = "text/css" data-hse-inline-css="true">
-	p {
-		font-family: Arial, sans-serif;
+
+	<style type="text/css">
+	html {
+		height:100%; 
+
+    	
 	}
-	HTML {
-		background-image: linear-gradient(to bottom right, white, #A8E1F4);
-		background-repeat: no-repeat;
-		background-size: cover;
+	nav {
+		border-bottom-style: solid;
+		background-image: linear-gradient(#f8f4ff, #8c8299, #8c8299, #f8f4ff);
+		border-top-style: solid;
 	}
+
+	*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to bottom right, #f75394, #A8E1F4, white) !important;
+  background-repeat:no-repeat !important;
+  background-attachment: fixed !important;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  height: 100vh;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 75px;
+}
+
+.carousel__item {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  padding: 0 12px;
+  opacity: 0;
+  filter: drop-shadow(0 2px 2px #555);
+  will-change: transform, opacity;
+  -webkit-animation: carousel-animate-vertical 27s linear infinite;
+          animation: carousel-animate-vertical 27s linear infinite;
+}
+
+.carousel__item:nth-child(1) {
+  -webkit-animation-delay: calc(3s * -1);
+          animation-delay: calc(3s * -1);
+}
+
+.carousel__item:nth-child(2) {
+  -webkit-animation-delay: calc(3s * 0);
+          animation-delay: calc(3s * 0);
+}
+
+.carousel__item:nth-child(3) {
+  -webkit-animation-delay: calc(3s * 1);
+          animation-delay: calc(3s * 1);
+}
+
+.carousel__item:nth-child(4) {
+  -webkit-animation-delay: calc(3s * 2);
+          animation-delay: calc(3s * 2);
+}
+
+.carousel__item:nth-child(5) {
+  -webkit-animation-delay: calc(3s * 3);
+          animation-delay: calc(3s * 3);
+}
+
+.carousel__item:nth-child(6) {
+  -webkit-animation-delay: calc(3s * 4);
+          animation-delay: calc(3s * 4);
+}
+
+.carousel__item:nth-child(7) {
+  -webkit-animation-delay: calc(3s * 5);
+          animation-delay: calc(3s * 5);
+}
+
+.carousel__item:nth-child(8) {
+  -webkit-animation-delay: calc(3s * 6);
+          animation-delay: calc(3s * 6);
+}
+
+.carousel__item:last-child {
+  -webkit-animation-delay: calc(-3s * 2);
+          animation-delay: calc(-3s * 2);
+}
+
+.carousel__item-head {
+  border-radius: 50%;
+  background-color: #d7f7fc;
+  width: 90px;
+  height: 90px;
+  padding: 14px;
+  position: relative;
+  margin-right: -45px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+}
+
+.carousel__item-body {
+  width: 100%;
+  background-color:white;
+  border-radius: 8px;
+  padding: 16px 20px 16px 70px;
+}
+
+.title {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.carousel_img{
+	height: 50px;
+	width: auto;
+}
+
+@-webkit-keyframes carousel-animate-vertical {
+  0% {
+    transform: translateY(100%) scale(0.5);
+    opacity: 0;
+    visibility: hidden;
+  }
+  3%, 11.1111111111% {
+    transform: translateY(100%) scale(0.7);
+    opacity: 0.4;
+    visibility: visible;
+  }
+  14.1111111111%, 22.2222222222% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+    visibility: visible;
+  }
+  25.2222222222%, 33.3333333333% {
+    transform: translateY(-100%) scale(0.7);
+    opacity: 0.4;
+    visibility: visible;
+  }
+  36.3333333333% {
+    transform: translateY(-100%) scale(0.5);
+    opacity: 0;
+    visibility: visible;
+  }
+  100% {
+    transform: translateY(-100%) scale(0.5);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes carousel-animate-vertical {
+  0% {
+    transform: translateY(100%) scale(0.5);
+    opacity: 0;
+    visibility: hidden;
+  }
+  3%, 11.1111111111% {
+    transform: translateY(100%) scale(0.7);
+    opacity: 0.4;
+    visibility: visible;
+  }
+  14.1111111111%, 22.2222222222% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+    visibility: visible;
+  }
+  25.2222222222%, 33.3333333333% {
+    transform: translateY(-100%) scale(0.7);
+    opacity: 0.4;
+    visibility: visible;
+  }
+  36.3333333333% {
+    transform: translateY(-100%) scale(0.5);
+    opacity: 0;
+    visibility: visible;
+  }
+  100% {
+    transform: translateY(-100%) scale(0.5);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
 </style>
-<body style= "background: transparent !important;">
+</head>
+<body >
 	<header class="site-header">
   		<nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
-    		<div class="container" 
-    		style= "background: transparent !important;">
+    		<div class="container" >
       		<a class="navbar-brand mr-4" href="/">PC Builds</a>
       		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
       		<span class="navbar-toggler-icon"></span>
@@ -77,19 +267,95 @@
 	    	{% endif %}
 	    {% block content %}{% endblock %}
 	    </div>
+
+
 	    <div class="col-md-4">
-	      <div class="content-section">
-	        <h3>Sidebar</h3>
-	        <p class='text-muted'>Sidebar info
-	          <ul class="list-group">
-	            <li class="list-group-item list-group-item-light">Latest Builds</li>
-	            <li class="list-group-item list-group-item-light">Announcements</li>
-	            <li class="list-group-item list-group-item-light">Calendars</li>
-	            <li class="list-group-item list-group-item-light">etc</li>
-	          </ul>
-	        </p>
-	      </div>
-	    </div>
+  <div class='wrapper'>
+  <div class='carousel'>
+    <div class='carousel__item'>
+      <div class='carousel__item-head'>
+          
+      </div>
+      <div class='carousel__item-body'>
+        <p class='title'>Pic 1</p>
+        <img class='carousel_img' src="https://scx2.b-cdn.net/gfx/news/hires/2020/computerchips.jpg">
+      </div>
+    </div>
+    <div class='carousel__item'>
+      <div class='carousel__item-head'>
+           
+      </div>
+      <div class='carousel__item-body'>
+        <p class='title'>pic2</p>
+        <img class='carousel_img' src="https://i.chzbgr.com/full/6959063040/hBE07F4DC/geeky-business-card-holder">
+      </div>
+    </div>
+    <div class='carousel__item'>
+      <div class='carousel__item-head'>
+          
+      </div>
+      <div class='carousel__item-body'>
+        <p class='title'>p1cK  3</p>
+        <img class='carousel_img' src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/AMD_heatsink_and_fan.jpg/1200px-AMD_heatsink_and_fan.jpg">
+      </div>
+    </div>
+    <div class='carousel__item'>
+      <div class='carousel__item-head'>
+          
+      </div>
+      <div class='carousel__item-body'>
+        <p class='title'>Pic 1</p>
+        <img class='carousel_img' src="https://scx2.b-cdn.net/gfx/news/hires/2020/computerchips.jpg">
+        
+      </div>
+    </div>
+    <div class='carousel__item'>
+      <div class='carousel__item-head'>
+        
+      </div>
+      <div class='carousel__item-body'>
+        <p class='title'>pic2</p>
+        <img class='carousel_img' src="https://i.chzbgr.com/full/6959063040/hBE07F4DC/geeky-business-card-holder">
+        
+      </div>
+    </div>
+    <div class='carousel__item'>
+      <div class='carousel__item-head'>
+        
+      </div>
+      <div class='carousel__item-body'>
+        <p class='title'>p1cK  3</p>
+        <img class='carousel_img' src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/AMD_heatsink_and_fan.jpg/1200px-AMD_heatsink_and_fan.jpg">
+        
+      </div>
+    </div>
+    <div class='carousel__item'>
+      <div class='carousel__item-head'>
+        
+      </div>
+      <div class='carousel__item-body'>
+        <p class='title'>Pic 1</p>
+        <img class='carousel_img' src="https://scx2.b-cdn.net/gfx/news/hires/2020/computerchips.jpg">
+        
+      </div>
+    </div>
+    <div class='carousel__item'>
+      <div class='carousel__item-head'>
+        
+      </div>
+      <div class='carousel__item-body'>
+        <p class='title'>pic2</p>
+        <img class='carousel_img' src="https://i.chzbgr.com/full/6959063040/hBE07F4DC/geeky-business-card-holder">
+        
+      </div>
+    </div>
+    <div class='carousel__item'>
+      <div class='carousel__item-head'>
+        
+      </div>
+      <div class='carousel__item-body'>
+        <p class='title'>p1cK  3</p>
+        <img class='carousel_img' src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/AMD_heatsink_and_fan.jpg/1200px-AMD_heatsink_and_fan.jpg">
 	  </div>
 	</main>
 	
