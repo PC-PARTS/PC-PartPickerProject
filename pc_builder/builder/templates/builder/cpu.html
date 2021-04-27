@@ -13,16 +13,23 @@
 	    <th>Price</th>
 	  </tr>
 	  
-	{% for cpu in cpus %}
+	{% for Cpu in cpus %}
 	<tr>
-	    <td>{{ Motherboard.m_board_name }}</td>
-	    <td>{{ Motherboard.socket_cpu }}</td>
-	    <td>{{ Motherboard.form_factor }}</td>
-	    <td>{{ Motherboard.memory_max }}</td>
-	    <td>{{ Motherboard.memory_slots }}</td>
-	    <td>{{ Motherboard.color }}</td>
-	    <td>{{ Motherboard.rating }}</td>
-	    <td>{{ Motherboard.price }}</td>
+	    <td>{{ Cpu.cpu_name }}</td>
+	    <td>{{ Cpu.core_count }}</td>
+	    <td>{{ Cpu.core_clock }}</td>
+	    <td>{{ Cpu.boost_clock }}</td>
+	    <td>{{ Cpu.tdp }}</td>
+	    <td>{{ Cpu.intigrated_graphics }}</td>
+	    <td>{{ Cpu.smt }}</td>
+	    <td>{{ Cpu.rating }}</td>
+	    <td>{{ Cpu.price }}</td>
+	    <td>
+	    	<form action="/parts/" method="POST" id="cpuButton">
+	    		{% csrf_token %}
+	    		<button type="submit" name="cpuButton" value= "{{ Cpu.cpu_name }}" form="caseButton">Add to Build</button>
+	    	</form>
+	    </td>
 	    
 	</tr>	
 	{% endfor %}

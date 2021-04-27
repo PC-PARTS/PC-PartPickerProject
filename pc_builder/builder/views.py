@@ -34,9 +34,11 @@ def builds(request):
 
 
 def parts(request):
-	return render(request, 'builder/parts.html')
+	context = {}
+	system = request.POST.get('caseButton', None)
+	context['system'] = system
+	return render(request, 'builder/parts.html',context)
 # Create your views here.
-
 
 
 

@@ -25,8 +25,9 @@
 	    <td>{{ case.rating }}</td>
 	    <td>{{ case.price }}</td>
 	    <td>
-	    	<form action="/event/" method="POST" id="caseButton">
-	    		<button type="submit" name="case" value=case.case_name form="caseButton" ></button>
+	    	<form action="/parts/" method="POST" id="caseButton">
+	    		{% csrf_token %}
+	    		<button type="submit" name="caseButton" value= "{{ case.case_name }}" form="caseButton">Add to Build</button>
 	    	</form>
 	    </td>
 	</tr>	
