@@ -33,12 +33,13 @@ def builds(request):
 	return render(request, 'builder/builds.html')
 
 
+
 def parts(request):
 	context = {}
 	system = request.POST.get('caseButton', None)
 	context['system'] = system
 	return render(request, 'builder/parts.html',context)
-# Create your views here.
+
 
 
 
@@ -64,7 +65,7 @@ class CPUListView(ListView):
 
 def cpu(request):
 	context = {
-		'cpu': Cpu.objects.all()
+		'cpus': Cpu.objects.all()
 	}
 	return render(request, 'builder/cpu.html', context)
 
@@ -154,7 +155,14 @@ def cases(request):
 	context = {
 		'cases': Case.objects.all()
 	}
-	return render(request, 'builder/cases.html', context)
+	system = request.POST.get('cpuButton', None)
+	context['system'] = system
+	if request.method == 'POST':
+		context = {}
+		return render(request, 'builder/parts.html',context)
+
+	else:
+		return render(request, 'builder/cases.html', context)
 
 class PsuListView(ListView):
 	model = Psu
